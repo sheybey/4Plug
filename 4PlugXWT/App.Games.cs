@@ -36,7 +36,7 @@ namespace FPlug
                 {
                     PathCustom = Path.Combine(CurrentGame.Path, "tf", "custom");
                     PathCustom_ = Path.Combine(CurrentGame.Path, "tf", "custom_");
-                    if (Directory.Exists(PathCustom_))
+                    if (!Directory.Exists(PathCustom_))
                         Directory.CreateDirectory(PathCustom_);
 
                     //MainWindow.Layout.AddChild(new DownloadHudWidget());
